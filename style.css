@@ -1,10 +1,16 @@
-html {
-    overflow-x: hidden;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 html {
     background: #121212;
     color: #bbb;
+}
+
+body {
+    overflow-x: hidden;
 }
 
 article {
@@ -15,8 +21,6 @@ article {
 }
 
 figure.large-block {
-    width: 1180px;
-    margin: 0 0 1rem -160px;
     text-align: center;
 }
 
@@ -29,7 +33,28 @@ img {
     cursor: zoom-in;
 }
 
+p {
+    margin-bottom: 1rem;
+}
+
 .float-block {
     float: left;
     margin: 10px;
+}
+
+.float-block.small {
+    max-width: 50%;
+}
+
+@media screen and (min-width: 1180px) {
+    figure.large-block {
+        width: 1180px;
+        margin: 0 0 1rem -160px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hide-if-mobile {
+        display: none;
+    }
 }
