@@ -2,11 +2,36 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Smooth zoom vanilla example</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+        <title>Smooth zoom</title>
         <link rel="stylesheet" async href="./style.css" />
+        <meta name="description" content="A light weight javascript library for zooming images." />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://marshall-ku.com/web/tips/%ec%8a%a4%eb%8f%84%ec%bf%a0-%ed%92%80%ec%96%b4%ec%a3%bc%eb%8a%94-%ed%94%84%eb%a1%9c%ea%b7%b8%eb%9e%a8-%eb%a7%8c%eb%93%a4%ea%b8%b0" />
+        <meta property="og:site_name" content="Smooth Zoom" />
+        <meta property="og:image" content="./images/IMG_20210112_155605-600" />
+        <meta property="og:title" content="Smooth Zoom" />
+        <meta property="og:description" content="A light weight javascript library for zooming images." />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@marshall_ku_" />
+        <meta name="twitter:title" content="Smooth Zoom" />
+        <meta property="twitter:description" content="A light weight javascript library for zooming images." />
+        <meta property="twitter:image" content="./images/IMG_20210112_155605-600" />
+        <meta name="by" content="Marshall K" />
+        <meta name="robots" content="index,follow" />
     </head>
     <body>
+        <header>
+            <h1>Smooth Zoom</h1>
+            <div>
+                <a href="https://github.com/marshall-ku/smooth-zoom" class="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1rem" height="1rem" viewBox="0 0 512 512">
+                        <path d="M256.004 6.321c-141.369 0-256.004 114.609-256.004 255.999 0 113.107 73.352 209.066 175.068 242.918 12.793 2.369 17.496-5.555 17.496-12.316 0-6.102-0.24-26.271-0.348-47.662-71.224 15.488-86.252-30.205-86.252-30.205-11.641-29.588-28.424-37.458-28.424-37.458-23.226-15.889 1.755-15.562 1.755-15.562 25.7 1.805 39.238 26.383 39.238 26.383 22.836 39.135 59.888 27.82 74.502 21.279 2.294-16.543 8.926-27.84 16.253-34.232-56.865-6.471-116.638-28.425-116.638-126.516 0-27.949 10.002-50.787 26.38-68.714-2.658-6.45-11.427-32.486 2.476-67.75 0 0 21.503-6.876 70.42 26.245 20.418-5.674 42.318-8.518 64.077-8.617 21.751 0.099 43.668 2.943 64.128 8.617 48.867-33.122 70.328-26.245 70.328-26.245 13.936 35.264 5.175 61.3 2.518 67.75 16.41 17.928 26.347 40.766 26.347 68.714 0 98.327-59.889 119.975-116.895 126.312 9.182 7.945 17.362 23.523 17.362 47.406 0 34.254-0.298 61.822-0.298 70.254 0 6.814 4.611 14.797 17.586 12.283 101.661-33.888 174.921-129.813 174.921-242.884 0-141.39-114.617-255.999-255.996-255.999z" />
+                    </svg>
+                    Github
+                </a>
+            </div>
+        </header>
         <article>
             <figure class="float-block small">
                 <img
@@ -22,50 +47,8 @@
                     "
                 />
             </figure>
-            <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo
-                deleniti eveniet doloremque culpa deserunt aliquid at
-                praesentium quidem sunt, repudiandae debitis autem, minus
-                laborum! Dolores nulla doloremque asperiores unde. Accusantium,
-                dignissimos ut? Sunt illum perspiciatis quibusdam labore maiores
-                itaque sapiente aliquam autem quas ad explicabo eos, placeat
-                odit minus numquam voluptatum minima id, a dolorem, repellat
-                provident maxime esse reiciendis. Quaerat unde, enim iusto
-                molestiae libero perferendis. Dignissimos a nostrum excepturi,
-                commodi sed in, labore quae odit, mollitia eius sunt neque culpa
-                tempore. Praesentium itaque, saepe laboriosam quasi perspiciatis
-                voluptate debitis quaerat aliquam fugiat velit corrupti soluta
-                dolorem eligendi! Enim.
-            </p>
-            <p class="hide-if-mobile">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo
-                deleniti eveniet doloremque culpa deserunt aliquid at
-                praesentium quidem sunt, repudiandae debitis autem, minus
-                laborum! Dolores nulla doloremque asperiores unde. Accusantium,
-                dignissimos ut? Sunt illum perspiciatis quibusdam labore maiores
-                itaque sapiente aliquam autem quas ad explicabo eos, placeat
-                odit minus numquam voluptatum minima id, a dolorem, repellat
-                provident maxime esse reiciendis. Quaerat unde, enim iusto
-                molestiae libero perferendis. Dignissimos a nostrum excepturi,
-                commodi sed in, labore quae odit, mollitia eius sunt neque culpa
-                tempore. Praesentium itaque, saepe laboriosam quasi perspiciatis
-                voluptate debitis quaerat aliquam fugiat velit corrupti soluta
-                dolorem eligendi! Enim.
-            </p>
-            <p class="hide-if-mobile">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo
-                deleniti eveniet doloremque culpa deserunt aliquid at
-                praesentium quidem sunt, repudiandae debitis autem, minus
-                laborum! Dolores nulla doloremque asperiores unde. Accusantium,
-                dignissimos ut? Sunt illum perspiciatis quibusdam labore maiores
-                itaque sapiente aliquam autem quas ad explicabo eos, placeat
-                odit minus numquam voluptatum minima id, a dolorem, repellat
-                provident maxime esse reiciendis. Quaerat unde, enim iusto
-                molestiae libero perferendis. Dignissimos a nostrum excepturi,
-                commodi sed in, labore quae odit, mollitia eius sunt neque culpa
-                tempore. Praesentium itaque, saepe laboriosam quasi perspiciatis
-                voluptate debitis quaerat aliquam fugiat velit corrupti soluta
-                dolorem eligendi! Enim.
+            <p class="text">
+                <span class="text__block">Lorem</span> <span class="text__block">ipsum</span> <span class="text__block">dolor,</span> <span class="text__block">amet</span> <span class="text__block">consectetur</span> <span class="text__block">adipisicing</span> <span class="text__block">elit.</span> <span class="text__block">Illo</span> <span class="text__block">deleniti</span> <span class="text__block">eveniet</span> <span class="text__block">doloremque</span> <span class="text__block">culpa</span> <span class="text__block">deserunt</span> <span class="text__block">aliquid</span> <span class="text__block">praesentium</span> <span class="text__block">quidem</span> <span class="text__block">sunt,</span> <span class="text__block">repudiandae</span> <span class="text__block">debitis</span> <span class="text__block">autem,</span> <span class="text__block">minus</span> <span class="text__block">laborum!</span> <span class="text__block">Dolores</span> <span class="text__block">nulla</span> <span class="text__block">doloremque</span> <span class="text__block">asperiores</span> <span class="text__block">unde.</span> <span class="text__block">Accusantium,</span> <span class="text__block">dignissimos</span> <span class="text__block">ut?</span> <span class="text__block">Sunt</span> <span class="text__block">illum</span> <span class="text__block">perspiciatis</span> <span class="text__block">quibusdam</span> <span class="text__block">labore</span> <span class="text__block">maiores</span> <span class="text__block">itaque</span> <span class="text__block">sapiente</span> <span class="text__block">aliquam</span> <span class="text__block">autem</span> <span class="text__block">Lorem</span> <span class="text__block">ipsum</span> <span class="text__block">dolor,</span> <span class="text__block">amet</span> <span class="text__block">consectetur</span> <span class="text__block">adipisicing</span> <span class="text__block">elit.</span> <span class="text__block">Illo</span> <span class="text__block">deleniti</span> <span class="text__block">eveniet</span> <span class="text__block">doloremque</span> <span class="text__block">culpa</span> <span class="text__block">deserunt</span> <span class="text__block">aliquid</span> <span class="text__block">Lorem</span> <span class="text__block">ipsum</span> <span class="text__block">dolor,</span> <span class="text__block">amet</span> <span class="text__block">consectetur</span> <span class="text__block">adipisicing</span> <span class="text__block">elit.</span> <span class="text__block">Illo</span> <span class="text__block">deleniti</span> <span class="text__block">eveniet</span> <span class="text__block">doloremque</span> <span class="text__block">culpa</span> <span class="text__block">deserunt</span> <span class="text__block">aliquid</span> <span class="text__block">praesentium</span> <span class="text__block">quidem</span> <span class="text__block">sunt,</span> <span class="text__block">repudiandae</span> <span class="text__block">debitis</span> <span class="text__block">autem,</span> <span class="text__block">minus</span> <span class="text__block">laborum!</span> <span class="text__block">Dolores</span> <span class="text__block">nulla</span> <span class="text__block">doloremque</span> <span class="text__block">asperiores</span> <span class="text__block">unde.</span> <span class="text__block">Accusantium,</span> <span class="text__block">dignissimos</span> <span class="text__block">ut?</span> <span class="text__block">Sunt</span> <span class="text__block">illum</span> <span class="text__block">perspiciatis</span> <span class="text__block">quibusdam</span> <span class="text__block">labore</span> <span class="text__block">maiores</span> <span class="text__block">itaque</span> <span class="text__block">sapiente</span> <span class="text__block">aliquam</span> <span class="text__block">autem</span> <span class="text__block">Lorem</span> <span class="text__block">ipsum</span> <span class="text__block">dolor,</span> <span class="text__block">amet</span> <span class="text__block">consectetur</span> <span class="text__block">adipisicing</span> <span class="text__block">elit.</span> <span class="text__block">Illo</span> <span class="text__block">deleniti</span> <span class="text__block">eveniet</span> <span class="text__block">doloremque</span> <span class="text__block">culpa</span> <span class="text__block">deserunt</span> <span class="text__block">aliquid</span>
             </p>
             <figure class="large-block">
                 <img
@@ -81,53 +64,11 @@
                     "
                 />
             </figure>
-            <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo
-                deleniti eveniet doloremque culpa deserunt aliquid at
-                praesentium quidem sunt, repudiandae debitis autem, minus
-                laborum! Dolores nulla doloremque asperiores unde. Accusantium,
-                dignissimos ut? Sunt illum perspiciatis quibusdam labore maiores
-                itaque sapiente aliquam autem quas ad explicabo eos, placeat
-                odit minus numquam voluptatum minima id, a dolorem, repellat
-                provident maxime esse reiciendis. Quaerat unde, enim iusto
-                molestiae libero perferendis. Dignissimos a nostrum excepturi,
-                commodi sed in, labore quae odit, mollitia eius sunt neque culpa
-                tempore. Praesentium itaque, saepe laboriosam quasi perspiciatis
-                voluptate debitis quaerat aliquam fugiat velit corrupti soluta
-                dolorem eligendi! Enim.
-            </p>
-            <p class="hide-if-mobile">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo
-                deleniti eveniet doloremque culpa deserunt aliquid at
-                praesentium quidem sunt, repudiandae debitis autem, minus
-                laborum! Dolores nulla doloremque asperiores unde. Accusantium,
-                dignissimos ut? Sunt illum perspiciatis quibusdam labore maiores
-                itaque sapiente aliquam autem quas ad explicabo eos, placeat
-                odit minus numquam voluptatum minima id, a dolorem, repellat
-                provident maxime esse reiciendis. Quaerat unde, enim iusto
-                molestiae libero perferendis. Dignissimos a nostrum excepturi,
-                commodi sed in, labore quae odit, mollitia eius sunt neque culpa
-                tempore. Praesentium itaque, saepe laboriosam quasi perspiciatis
-                voluptate debitis quaerat aliquam fugiat velit corrupti soluta
-                dolorem eligendi! Enim.
-            </p>
-            <p class="hide-if-mobile">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo
-                deleniti eveniet doloremque culpa deserunt aliquid at
-                praesentium quidem sunt, repudiandae debitis autem, minus
-                laborum! Dolores nulla doloremque asperiores unde. Accusantium,
-                dignissimos ut? Sunt illum perspiciatis quibusdam labore maiores
-                itaque sapiente aliquam autem quas ad explicabo eos, placeat
-                odit minus numquam voluptatum minima id, a dolorem, repellat
-                provident maxime esse reiciendis. Quaerat unde, enim iusto
-                molestiae libero perferendis. Dignissimos a nostrum excepturi,
-                commodi sed in, labore quae odit, mollitia eius sunt neque culpa
-                tempore. Praesentium itaque, saepe laboriosam quasi perspiciatis
-                voluptate debitis quaerat aliquam fugiat velit corrupti soluta
-                dolorem eligendi! Enim.
+            <p class="text">
+                <span class="text__block">Lorem</span> <span class="text__block">ipsum</span> <span class="text__block">dolor,</span> <span class="text__block">amet</span> <span class="text__block">consectetur</span> <span class="text__block">adipisicing</span> <span class="text__block">elit.</span> <span class="text__block">Illo</span> <span class="text__block">deleniti</span> <span class="text__block">eveniet</span> <span class="text__block">doloremque</span> <span class="text__block">culpa</span> <span class="text__block">deserunt</span> <span class="text__block">aliquid</span> <span class="text__block">praesentium</span> <span class="text__block">quidem</span> <span class="text__block">sunt,</span> <span class="text__block">repudiandae</span> <span class="text__block">debitis</span> <span class="text__block">autem,</span> <span class="text__block">minus</span> <span class="text__block">laborum!</span> <span class="text__block">Dolores</span> <span class="text__block">nulla</span> <span class="text__block">doloremque</span> <span class="text__block">asperiores</span> <span class="text__block">unde.</span> <span class="text__block">Accusantium,</span> <span class="text__block">dignissimos</span> <span class="text__block">ut?</span> <span class="text__block">Sunt</span> <span class="text__block">illum</span> <span class="text__block">perspiciatis</span> <span class="text__block">quibusdam</span> <span class="text__block">labore</span> <span class="text__block">maiores</span> <span class="text__block">itaque</span> <span class="text__block">sapiente</span> <span class="text__block">aliquam</span> <span class="text__block">autem</span> <span class="text__block">quas</span> <span class="text__block">ad</span> <span class="text__block">explicabo</span> <span class="text__block">eos,</span> <span class="text__block">placeat</span> <span class="text__block">odit</span> <span class="text__block">minus</span> <span class="text__block">numquam</span> <span class="text__block">voluptatum</span> <span class="text__block">minima</span> <span class="text__block">id,</span> <span class="text__block">dolorem,</span> <span class="text__block">repellat</span> <span class="text__block">provident</span> <span class="text__block">maxime</span> <span class="text__block">esse</span> <span class="text__block">reiciendis.</span> <span class="text__block">Quaerat</span> <span class="text__block">unde,</span> <span class="text__block">enim</span> <span class="text__block">iusto</span> <span class="text__block">molestiae</span> <span class="text__block">libero</span> <span class="text__block">perferendis.</span> <span class="text__block">Dignissimos</span> <span class="text__block">nostrum</span> <span class="text__block">excepturi,</span> <span class="text__block">commodi</span> <span class="text__block">sed</span> <span class="text__block">in,</span> <span class="text__block">labore</span> <span class="text__block">quae</span> <span class="text__block">odit,</span> <span class="text__block">mollitia</span> <span class="text__block">eius</span> <span class="text__block">sunt</span> <span class="text__block">neque</span> <span class="text__block">culpa</span> <span class="text__block">tempore.</span> <span class="text__block">Praesentium</span> <span class="text__block">itaque,</span> <span class="text__block">saepe</span> <span class="text__block">laboriosam</span> <span class="text__block">quasi</span> <span class="text__block">perspiciatis</span> <span class="text__block">voluptate</span> <span class="text__block">debitis</span> <span class="text__block">quaerat</span> <span class="text__block">aliquam</span> <span class="text__block">fugiat</span> <span class="text__block">velit</span> <span class="text__block">corrupti</span> <span class="text__block">soluta</span> <span class="text__block">dolorem</span> <span class="text__block">eligendi!</span> <span class="text__block">Enim.</span> <span class="text__block">Lorem</span> <span class="text__block">ipsum</span> <span class="text__block">dolor,</span> <span class="text__block">amet</span> <span class="text__block">consectetur</span> <span class="text__block">adipisicing</span> <span class="text__block">elit.</span> <span class="text__block">Illo</span> <span class="text__block">deleniti</span> <span class="text__block">eveniet</span> <span class="text__block">doloremque</span> <span class="text__block">culpa</span> <span class="text__block">deserunt</span> <span class="text__block">aliquid</span> <span class="text__block">praesentium</span> <span class="text__block">quidem</span> <span class="text__block">sunt,</span> <span class="text__block">repudiandae</span> <span class="text__block">debitis</span> <span class="text__block">autem,</span> <span class="text__block">minus</span> <span class="text__block">laborum!</span> <span class="text__block">Dolores</span> <span class="text__block">nulla</span> <span class="text__block">doloremque</span> <span class="text__block">asperiores</span> <span class="text__block">unde.</span> <span class="text__block">Accusantium,</span> <span class="text__block">dignissimos</span> <span class="text__block">ut?</span> <span class="text__block">Sunt</span> <span class="text__block">illum</span> <span class="text__block">perspiciatis</span> <span class="text__block">quibusdam</span> <span class="text__block">labore</span> <span class="text__block">maiores</span> <span class="text__block">itaque</span> <span class="text__block">sapiente</span> <span class="text__block">aliquam</span> <span class="text__block">autem</span> <span class="text__block">quas</span> <span class="text__block">ad</span> <span class="text__block">explicabo</span> <span class="text__block">eos,</span> <span class="text__block">placeat</span> <span class="text__block">odit</span> <span class="text__block">minus</span> <span class="text__block">numquam</span> <span class="text__block">voluptatum</span> <span class="text__block">minima</span> <span class="text__block">id,</span> <span class="text__block">dolorem,</span> <span class="text__block">repellat</span> <span class="text__block">provident</span> <span class="text__block">maxime</span> <span class="text__block">esse</span> <span class="text__block">reiciendis.</span> <span class="text__block">Quaerat</span> <span class="text__block">unde,</span> <span class="text__block">enim</span> <span class="text__block">iusto</span> <span class="text__block">molestiae</span> <span class="text__block">libero</span> <span class="text__block">perferendis.</span> <span class="text__block">Dignissimos</span> <span class="text__block">nostrum</span> <span class="text__block">excepturi,</span> <span class="text__block">commodi</span> <span class="text__block">sed</span> <span class="text__block">in,</span> <span class="text__block">labore</span> <span class="text__block">quae</span> <span class="text__block">odit,</span> <span class="text__block">mollitia</span> <span class="text__block">eius</span> <span class="text__block">sunt</span> <span class="text__block">neque</span> <span class="text__block">culpa</span> <span class="text__block">tempore.</span> <span class="text__block">Praesentium</span> <span class="text__block">itaque,</span> <span class="text__block">saepe</span> <span class="text__block">laboriosam</span> <span class="text__block">quasi</span> <span class="text__block">perspiciatis</span> <span class="text__block">voluptate</span> <span class="text__block">debitis</span> <span class="text__block">quaerat</span> <span class="text__block">aliquam</span> <span class="text__block">fugiat</span> <span class="text__block">velit</span> <span class="text__block">corrupti</span> <span class="text__block">soluta</span> <span class="text__block">dolorem</span> <span class="text__block">eligendi!</span> <span class="text__block">Enim.</span>
             </p>
         </article>
-        <script defer src="./zoom.js"></script>
-        <script defer src="./app.js"></script>
+        <script type="module" defer src="./zoom.js"></script>
+        <script type="module" defer src="./app.js"></script>
     </body>
 </html>
