@@ -56,13 +56,16 @@ img {
     cursor: zoom-in;
 }
 
-.float-block {
+.float-left {
+    width: 50%;
     float: left;
     margin-right: 10px;
 }
 
-.float-block.small {
-    width: 50%;
+.float-right {
+    width: 35%;
+    float: right;
+    margin-left: 10px;
 }
 
 .text {
