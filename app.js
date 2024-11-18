@@ -3,4 +3,5 @@ Zoom("img", {
         img.src = img.src.replace(/-[0-9]+\.jpg/, ".jpg");
     },
     background: "auto",
+    useBoundingClientRect: false,
 });
